@@ -16,6 +16,19 @@ For example:
 
 */
 
+verbing("theee");
+
 function verbing(word) {
   // write your solution here...
+  w_length = word.length;
+  if(w_length < 3){
+  	console.log(word);
+  }
+  else if ((word[w_length - 3] =="i") && (word[w_length - 2] =="n") && (word[w_length - 1] == "g")){
+  	word = word + "ly";
+  	console.log(word);
+  } else {
+  	word = word + "ing";
+  	console.log(word);
+  }
 }

@@ -10,6 +10,30 @@ For example:
   DrEvil(1000000): 1000000 dollars (pinky)
 */
 
-function drEvil(amount) {
-  // write your solution here...
-}
+console.log("Enter an amount:");
+
+var stdin = process.openStdin();
+
+stdin.addListener("data", function(d) {
+    
+    var x = Number(d); 
+
+    function drEvil(x) {
+
+    	if(x >= 1000000){
+    		return 1;
+    	} else return 0;
+
+    }
+
+    var y = drEvil(x);
+
+    if(y === 1){
+
+    	console.log(x + '(pinky)');
+    	
+    } else console.log(x);   
+
+  });
+
+

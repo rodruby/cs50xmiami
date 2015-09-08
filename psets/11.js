@@ -12,3 +12,20 @@ Write a function named calculateAge that:
 */
 
 // write your solution here...
+
+
+var currentYear = new Date().getFullYear();
+
+function calculateAge(birtYear, cuurentYear){
+
+    
+    var y = cuurentYear - birtYear;
+
+    var z = (cuurentYear - birtYear) - 1;
+
+    console.log("They are either " + z + " or " + y);
+
+ }
+calculateAge(1980, 2015);
+calculateAge(1976, 2015);
+calculateAge(2005, 2015);

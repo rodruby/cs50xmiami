@@ -18,3 +18,20 @@ Never forget another recipe!
 */
 
 // write your solution here...
+
+favRecipe = {
+	title: "Rice, Beans, and Chicken.",
+	serves: 2,
+    ingredients: [
+    	"white rice", 
+    	"black beans",
+    	"baked chicken"
+    	]
+};
+
+console.log(favRecipe.title);
+console.log("Serves: " + favRecipe.serves);
+console.log("Ingredients:");
+var ingLength = favRecipe.ingredients.length;
+for(i = 0; i < ingLength; i++)
+	console.log( favRecipe.ingredients[i]);

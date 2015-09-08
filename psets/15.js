@@ -10,3 +10,17 @@ and log the output to make sure it works (e.g. "The greater number of 5 and 10 i
 */
 
 // write your solution here...
+
+
+function greaterNum(x, y){
+	if (x > y)
+		console.log("The greater number of " + x + " and " + y + " is "+ x + ".");
+	if (y > x)
+		console.log("The greater number of " + y + " and " + x + " is "+ y + ".");
+	else if(x == y)
+		console.log(x + " and " + y + " are equal.");
+}
+
+greaterNum(6, 7);
+greaterNum(6, 4);
+greaterNum(5, 5);

@@ -9,3 +9,9 @@ Create an array to hold your top choices (colors, presidents, whatever).
 */
 
 // write your solution here...
+
+var myArray = ["Blue", "Black", "Brown", "Red", "Green"];
+
+
+for(i = 0, z = myArray.length; i <= z; i++)
+	console.log("My #" + (i + 1) + " favorite color is: " + myArray[i]);

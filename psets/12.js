@@ -12,3 +12,14 @@ Write a function named calculateSupply that:
 */
 
 // write your solution here...
+
+function lifetimeSupply(cur_age, max_age){
+
+	var lifetime_apples = (max_age - cur_age) * 365; 
+	console.log("You will need " + Math.ceil(lifetime_apples) + " to last you until the ripe old age of " + max_age);
+
+}
+
+lifetimeSupply(9, 90);
+lifetimeSupply(5, 90);
+lifetimeSupply(39, 95);

@@ -10,3 +10,23 @@ Forgot how old someone is? Calculate it!
 */
 
 // write your solution here...
+
+var current_year = new Date().getFullYear();
+//var birth_yr = prompt("Enter the current year");
+//console.log("They are either " + current_year - birth_yr + " or " + current_year - birth_yr - 1);
+
+console.log("Enter the birth year:");
+
+var stdin = process.openStdin();
+
+stdin.addListener("data", function(d) {
+    
+    var x = Number(d); 
+
+    var y = current_year - d;
+
+    var z = (current_year - d) - 1;
+
+    console.log("They are either " + z + " or " + y);
+
+  });

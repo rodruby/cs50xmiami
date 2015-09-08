@@ -11,3 +11,18 @@ and log the result to make sure it works.
 */
 
 // write your solution here...
+
+
+function helloWorld(langCode){
+	if(langCode == "en" || (typeof langCode === "undefined"))
+		console.log("Hello World");
+	else if(langCode =="es")
+		console.log("Hola Mundo");
+	else if(langCode =="pt")
+		console.log("Ola mundo");
+}
+
+helloWorld("en");
+helloWorld("es");
+helloWorld("pt");
+helloWorld();

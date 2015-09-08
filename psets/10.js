@@ -10,3 +10,15 @@ Write a function named tellFortune that:
 */
 
 // write your solution here...
+
+fortuneTeller(2, "Yanet", "Miami", "Web Developer");
+
+fortuneTeller(3, "Adriana", "Miami", "Appraiser");
+
+fortuneTeller(4, "Gelsis", "Miami", "Realtor");
+
+
+
+function fortuneTeller(numChild, parner, geoLoc, job){
+	console.log("You will be a "+job+" in "+geoLoc+", and married to "+parner+" with "+numChild+" kids.");
+}
