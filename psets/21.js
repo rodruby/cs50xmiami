@@ -19,7 +19,7 @@ Never forget another recipe!
 
 // write your solution here...
 
-favRecipe = {
+var favRecipe = {
 	title: "Rice, Beans, and Chicken.",
 	serves: 2,
     ingredients: [

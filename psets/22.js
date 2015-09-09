@@ -17,3 +17,27 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+
+var objArray = [
+	js = {
+		title: "JavaScript and JQuery",
+		author: "John Ducket",
+		read: true
+	},
+
+	ruby = {
+		title: "The Ruby Way",
+		author: "Hal Fulton",
+		read: false
+	}
+
+];
+
+var arrLenght = objArray.length;
+
+for (var i = 0; i < arrLenght; i++) {
+	if(objArray[i].read == true)
+		console.log('You already read ' + objArray[i].title + " by " + objArray[i].author + ".");
+	else
+		console.log("You still need to read " + objArray[i].title + " by " + objArray[i].author + ".");
+};

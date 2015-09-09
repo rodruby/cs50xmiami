@@ -11,3 +11,22 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+
+
+var favMovie = {
+	title: "Three Stooges",
+	duration: "2 hours",
+	stars: [
+		"Larry",
+		"Moe",
+		"Curly"
+	]
+
+};
+
+function printMovie(){
+
+	console.log(favMovie.title + " lasts for" +  favMovie.duration + ". Stars: " + favMovie.stars.join(', ') +".")
+}
+
+printMovie();
